@@ -1,0 +1,49 @@
+/*------CSS Grid Setup------*/
+
+.container {
+  display: grid;
+  grid-template-columns: 25% auto auto 25%;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  grid-template-areas: "header header header header"
+		"first first first first"
+		"left main main right"
+		"footer footer footer footer";
+}
+
+.long-row {
+  grid-area: first;
+}
+
+.navbar {
+  grid-area: header;
+}
+
+.left-posts {
+  grid-area: left;
+}
+
+.main-post {
+  grid-area: main;
+}
+
+.bottom-posts {
+  grid-area: footer;
+}
+
+.right-posts {
+  grid-area: right;
+}
+
+/*------CSS Grid Setup------*/
+
+/*------Nested Grid-----*/
+
+.nested-row {
+  display: grid;
+  grid-template-columns: 25% auto auto 25%;
+  grid-column-gap: 10px;
+}
+
+/*------Nested Grid-----*/

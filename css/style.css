@@ -1,0 +1,33 @@
+@import "grid.css";
+@import "blog-post.css";
+@import "media-queries.css";
+ body {
+  min-width: 399px;
+}
+/*------Header Section-----*/
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 10px auto;
+}
+button {
+  font-size: 2.0vw;
+}
+.nav-links {
+  text-align: center;
+  margin: 0;
+}
+/*------Header Section-----*/
+
+h2 {
+  background-color: lightblue;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+.side-post {
+  margin-bottom: 2%;
+}

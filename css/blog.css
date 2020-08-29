@@ -1,0 +1,62 @@
+@import "../css/style.css";
+
+/*------CSS Grid Setup------*/
+
+#container {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  grid-template-areas: "header header""left main";
+}
+/*------CSS Grid Setup------*/
+
+hr {
+  margin-top: 30px;
+  border: 10px solid green;
+  border-radius: 5px;
+  width: 100%;
+}
+#post-img {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+h3 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+#sidebar-heading {
+  margin-top: 0;
+}
+.segment {
+  padding: 5px 10px;
+}
+figure {
+  margin: 0 0;
+  padding: 0 0;
+}
+.fig-caption {
+  font-weight: bold;
+  color: blue;
+}
+#blog-post {
+  padding: 0 10px;
+}
+@media(min-width:399px) and (max-width:699px) {
+  #container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+    grid-template-areas: "header header""main main""left left";
+  }
+  #sidebar-heading {
+    font-size: 1.5rem;
+  }
+  #nested-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+  }
+}
