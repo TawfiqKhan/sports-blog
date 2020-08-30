@@ -1,14 +1,9 @@
 @media(min-width:399px) and (max-width: 699px) {
-
   .container {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 10px;
-    grid-template-areas: "header header"
-    "first first"
-    "main main"
-    "left right"
-    "footer footer";
+    grid-template-areas: "header header" "first first" "main main" "left right" "footer footer";
   }
 
   .img-container h3 {
@@ -19,9 +14,11 @@
     font-size: 4vw;
   }
 
-  .nested-row {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 10px;
+  #nested-row {
+    flex-wrap: wrap;
+  }
+
+  .flex-class {
+    width: 46%;
   }
 }

@@ -1,9 +1,11 @@
 @import "grid.css";
 @import "blog-post.css";
 @import "media-queries.css";
- body {
+body {
   min-width: 399px;
 }
+
+
 /*------Header Section-----*/
 
 h1 {
@@ -12,13 +14,17 @@ h1 {
   text-align: center;
   margin: 10px auto;
 }
+
 button {
   font-size: 2.0vw;
 }
+
 .nav-links {
   text-align: center;
   margin: 0;
 }
+
+
 /*------Header Section-----*/
 
 h2 {
@@ -28,6 +34,31 @@ h2 {
   font-size: 1.5rem;
   padding: 10px 0;
 }
+
 .side-post {
   margin-bottom: 2%;
+}
+
+@media(min-width:399px) and (max-width: 699px) {
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+    grid-template-areas: "header header" "first first" "main main" "left right" "footer footer";
+  }
+  .img-container h3 {
+    font-size: 3vw;
+  }
+  #main-img-text {
+    font-size: 4vw;
+  }
+  #nested-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flex-class {
+    width: 46%;
+  }
 }

@@ -10,40 +10,79 @@
   grid-row-gap: 10px;
   grid-template-areas: "header header""left main";
 }
+
+
 /*------CSS Grid Setup------*/
 
-hr {
+
+/*Nested FlexBox*/
+
+#flex-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-class {
+  width: 100%;
+}
+
+
+/*Nested FlexBox*/
+
+.header-hr {
   margin-top: 30px;
   border: 10px solid green;
   border-radius: 5px;
   width: 100%;
 }
+
 #post-img {
   width: 100%;
   height: auto;
   border: none;
 }
+
 h3 {
   font-size: 2rem;
   margin-top: 0;
 }
+
 #sidebar-heading {
   margin-top: 0;
 }
+
 .segment {
   padding: 5px 10px;
 }
+
 figure {
   margin: 0 0;
   padding: 0 0;
 }
+
 .fig-caption {
   font-weight: bold;
   color: blue;
 }
+
 #blog-post {
   padding: 0 10px;
 }
+
+.imp-text {
+  font-weight: bold;
+}
+
+.icons {
+  font-size: 3vw;
+  font-color: blue;
+  margin-right: 10px;
+}
+
+.icon-hr {
+  margin: 5px 0;
+}
+
 @media(min-width:399px) and (max-width:699px) {
   #container {
     display: grid;
@@ -54,9 +93,13 @@ figure {
   #sidebar-heading {
     font-size: 1.5rem;
   }
-  #nested-row {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 10px;
+  #flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flex-class {
+    width: 46%;
   }
 }
